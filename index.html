@@ -1,56 +1,149 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Letter Brief Support</title>
-<style>
-body{margin:0;padding:24px 18px 64px;background:#F7F5F0;color:#14213D;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-main{max-width:720px;margin:0 auto}
-h1{font-size:28px;line-height:1.25;margin:0 0 4px}
-p.eff{color:#5A6275;font-size:14px;margin:0 0 28px}
-h2{font-size:20px;margin:32px 0 8px}
-ul{padding-left:20px}
-a{color:#14213D}
-.box{background:#fff;border:2px solid #E4E0D6;border-radius:16px;padding:16px 18px;margin:20px 0}
-@media (prefers-color-scheme: dark){
-body{background:#10141F;color:#ECE9E2}
-p.eff{color:#A4A9B6}
-a{color:#FFD24D}
-.box{background:#1A2030;border-color:#2C3447}
-}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letter Brief: Mail Explainer — On-Device iPhone App for Bills, IRS Notices, Citations &amp; Leases</title>
+  <meta name="description" content="Point your iPhone camera at any confusing medical bill, IRS tax notice, parking citation, insurance EOB, or lease. Get a 5-row plain-English brief, tap-to-source proof, deadline calendar alert, and reply letter 100% on-device.">
+  <meta name="keywords" content="letter brief, mail explainer, explain medical bill app, IRS notice scanner iPhone, parking citation appeal app, lease reader OCR, on-device document explainer iOS">
+  <link rel="canonical" href="https://shuhratjon1010.github.io/letter-brief-support/">
+  <link rel="alternate" type="text/plain" title="LLMs.txt" href="https://shuhratjon1010.github.io/letter-brief-support/llms.txt">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Letter Brief: Mail Explainer",
+        "alternateName": "Letter Brief",
+        "operatingSystem": "iOS 18.0 or later",
+        "applicationCategory": "ProductivityApplication",
+        "applicationSubCategory": "Document Scanner & Official Mail Explainer",
+        "url": "https://apps.apple.com/app/id6818317894",
+        "downloadUrl": "https://apps.apple.com/app/id6818317894",
+        "description": "100% on-device iPhone app that turns confusing bills, IRS tax notices, medical EOBs, parking citations, and landlord leases into a 5-row plain-English brief with tap-to-source highlighting, deadline calendar (.ics) alerts, dispute/reply letter templates, and signed searchable PDF export.",
+        "featureList": [
+          "5-Row Plain-English Brief (What it is, What they ask, Date, Amount, If you don't)",
+          "Tap-to-Source Bounding-Box Sentence Highlighting on Scanned Pages",
+          "100% On-Device Apple Vision OCR & Local Extraction (Zero Cloud Uploads)",
+          "Tailored 3-Step Action Checklist & Dispute / Response Letter Generator",
+          "1-Tap Deadline Calendar (.ics) Export with 48h and 24h Reminders",
+          "Handwritten Signature Placement & Searchable PDF Export with 5-Fact Cover Page"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Free Tier (4 Interactive Samples + 1 Full Real-Document Brief)",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "name": "Letter Brief Pro Annual (7-Day Free Trial)",
+            "price": "49.99",
+            "priceCurrency": "USD"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Letter Brief upload my medical bills or IRS tax notices to the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Letter Brief performs all OCR text recognition (Apple Vision) and 5-row fact extraction 100% locally on your iPhone. No account is required and no document image or text ever leaves your device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of letters can Letter Brief explain?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Letter Brief is purpose-built for medical bills, hospital statements, insurance Explanations of Benefits (EOBs), IRS and state tax notices (such as CP14), municipal parking citations, traffic fines, landlord lease renewals, HOA letters, and debt collection notices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Letter Brief generate a dispute or reply letter and save deadlines to my calendar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every Brief includes a 1-tap Deadline Calendar (.ics) reminder with 48-hour and 24-hour alerts, plus an Action Plan & Draft Reply Letter generator customized with the sender, amount, and deadline extracted from your letter."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      padding: 40px 22px 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+      background: #F6F4EF;
+      color: #141413;
+      line-height: 1.58;
+    }
+    main { max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 8px; }
+    .subtitle { font-size: 18px; color: #595853; margin: 0 0 18px; font-weight: 500; }
+    .rule { height: 6px; background: #141413; margin: 16px 0 26px; }
+    h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; margin: 30px 0 8px; }
+    p, li { color: #2C2B29; font-size: 16px; }
+    .cta {
+      display: inline-block;
+      background: #141413;
+      color: #F6F4EF;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 6px;
+      margin: 8px 0 16px;
+    }
+    a { color: #141413; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border-bottom: 1px solid #D8D4CC; padding: 10px 8px; text-align: left; }
+    th { font-weight: 700; }
+  </style>
 </head>
 <body>
-<main>
-<h1>Letter Brief Support</h1>
-<p class="eff">Letter Brief for iPhone · by Shuhrat Soliev</p>
-<div class="box"><strong>Contact.</strong> Email <a href="mailto:shuhrat.soliev@gmail.com">shuhrat.soliev@gmail.com</a> or call <a href="tel:+19146502041">+1 914 650 2041</a>. Please include your iPhone model, iOS version, and what you tapped. Do not send a photo of a private letter.</div>
+  <main>
+    <h1>Letter Brief: Mail Explainer</h1>
+    <p class="subtitle">Plain-English Bills, IRS Tax Notices, Parking Citations &amp; Leases — 100% On-Device for iPhone</p>
+    <a class="cta" href="https://apps.apple.com/app/id6818317894">Download on the App Store</a>
+    <div class="rule"></div>
 
-<h2>What Letter Brief does</h2>
-<p>Scan or import a letter and get five plain answers from the words on the page: what it is, what they ask, the date, the amount, and what happens if you don’t. Tap an answer to see where it came from on your page. Sign with your finger and save a separate signed PDF. Text is read on your iPhone; the page image is not uploaded.</p>
+    <h2>Every Letter Distilled Into 5 Verified Facts</h2>
+    <p>Point your iPhone camera at any physical letter or import a PDF. Letter Brief extracts the five facts that matter and highlights the exact source sentence on the page when you tap any row:</p>
+    <ul>
+      <li><strong>What it is</strong> — Sender and document category (Citation, Medical Bill / EOB, IRS Notice, Lease, Collection Letter).</li>
+      <li><strong>What they ask</strong> — The core action required in plain English.</li>
+      <li><strong>Date</strong> — Extracted due date or response deadline with 1-tap <code>.ics</code> Calendar alert export.</li>
+      <li><strong>Amount</strong> — Exact dollar figure due, balance, or penalty.</li>
+      <li><strong>If you don't</strong> — Late fees, interest, or legal consequences stated on the page.</li>
+    </ul>
 
-<h2>Common questions</h2>
-<h3>A row says “Not found in this letter.”</h3>
-<p>The app only shows facts printed on the page and never guesses. Try a sharper scan in good light, with the whole page in the frame, or import the original PDF.</p>
-<h3>The camera won’t open.</h3>
-<p>Open the Settings app, tap Letter Brief, and turn on Camera. You can also import a photo or a PDF instead.</p>
-<h3>How do I delete a letter?</h3>
-<p>Swipe it away under Recent. Deleting the app deletes every saved letter.</p>
-<h3>Is my first brief free?</h3>
-<p>Yes. Your first successful brief is free. After that, a subscription unlocks unlimited briefs. The price and the free-trial length are shown in the app before you subscribe.</p>
-<h3>How do I restore a subscription on a new iPhone?</h3>
-<p>Sign in with the same Apple Account, open Letter Brief, then tap Restore Purchases on the subscription screen or in Settings inside the app.</p>
-<h3>How do I cancel?</h3>
-<p>Open the Settings app on your iPhone, tap your name, then Subscriptions, then Letter Brief. Cancel at least 24 hours before the current period ends. Subscriptions renew automatically until canceled. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
-<h3>Is this advice?</h3>
-<p>No. The brief summarizes the words on the page. It is a reading aid, not advice. Check the original letter before you act.</p>
+    <h2>Action Plan, Reply Letter Templates, Sign &amp; PDF Export</h2>
+    <ul>
+      <li><strong>Action Plan &amp; Draft Reply Letter:</strong> Generates a 3-step checklist and ready-to-copy written response/dispute letter tailored to your notice type.</li>
+      <li><strong>Interactive 4-Category Sample Library:</strong> Test a Parking Citation ($65.00), Medical Bill ($240.00), IRS Notice CP14 ($1,180.00), and Lease Renewal ($1,850.00) right from the Home screen.</li>
+      <li><strong>Sign &amp; Export Searchable PDF:</strong> Place your signature or export a searchable PDF with an optional 5-Fact Summary Cover Page.</li>
+    </ul>
 
-<h2>Policies</h2>
-<ul>
-<li><a href="privacy.html">Privacy Policy</a></li>
-<li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a></li>
-</ul>
-</main>
+    <h2>100% On-Device Privacy</h2>
+    <p>Letter Brief reads your pages locally on your iPhone using Apple Vision. No account is required, and your documents never leave your device unless you choose to export or share a PDF.</p>
+
+    <h2>Support &amp; Resources</h2>
+    <p>Questions or feedback: <a href="mailto:daler.soliev@gmail.com">daler.soliev@gmail.com</a></p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> &middot;
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a> &middot;
+      <a href="llms.txt">AI Agent Guide (llms.txt)</a> &middot;
+      <a href="llms-full.txt">Full AI Spec (llms-full.txt)</a>
+    </p>
+  </main>
 </body>
 </html>
